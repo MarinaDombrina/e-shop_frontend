@@ -15,8 +15,6 @@ const Shop = observer(() => {
     fetchProducts(product.selectedCategory._id).then(data => product.setProducts(data))
   }, [product.selectedCategory])
 
-  console.log(product.products.map((product) => console.log()));
-
   return (
     <Container className='mt-5'>
       <Row>
